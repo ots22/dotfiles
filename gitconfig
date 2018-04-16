@@ -1,0 +1,15 @@
+[user]
+	name = Oliver Strickson
+	email = ostrickson@turing.ac.uk
+	signingkey = 146358CBA37048D9
+[color]
+	status = false
+	branch = false
+	ui = false
+[core]
+	pager = cat
+[alias]
+	l = log --decorate --graph --oneline --boundary --all
+	s = status --short
+	b = branch --all
+	update = "!git pull --rebase --prune $@ && git submodule update --init --recursive; :"

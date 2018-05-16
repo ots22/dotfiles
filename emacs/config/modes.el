@@ -36,6 +36,8 @@
     (directory-files default-directory t ".*.org"))
 
 (setq org-refile-targets '((nil :maxlevel . 9) (org-files-current-directory :maxlevel . 9)))
+(setq org-directory "~/shared/notes/")
+(setq org-agenda-files '("~/shared/notes/"))
 
 ;(setq org-babel-noweb-wrap-begin "«")
 ;(setq org-babel-noweb-wrap-end "»")

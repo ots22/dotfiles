@@ -21,3 +21,10 @@
 (load-library "ibuffer-settings")
 (load-library "backup")
 (load-library "keys")
+
+;; commented-out "package-initialize" to placate package.el (it's
+;; actually called in package-config.el:
+;; (package-initialize)
+
+(setq custom-file "~/.emacs.d/config/custom.el")
+(load custom-file)

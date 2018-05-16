@@ -19,6 +19,7 @@
 
 (add-hook 'tex-mode-hook 'ezbf-minor-mode)
 
+(add-hook 'shell-mode-hook (lambda () (visual-line-mode 1)))
 
 (require 'vc)
 (add-hook 'after-save-hook
@@ -35,3 +36,9 @@
     (directory-files default-directory t ".*.org"))
 
 (setq org-refile-targets '((nil :maxlevel . 9) (org-files-current-directory :maxlevel . 9)))
+
+;(setq org-babel-noweb-wrap-begin "«")
+;(setq org-babel-noweb-wrap-end "»")
+(setq org-src-tab-acts-natively nil)
+(setq org-src-fontify-natively t)
+;(setq org-src-preserve-indentation t)

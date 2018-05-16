@@ -8,3 +8,7 @@
 (global-set-key (kbd "M-V") 'scroll-other-window-down)
 (global-set-key (kbd "M-o") 'smart-open-line-above)
 (global-set-key (kbd "C-c f") 'filename-to-kill-ring)
+(global-set-key (kbd "C-c n") 'next-page)
+(global-set-key (kbd "C-c p") 'prev-page)
+(global-set-key (kbd "C-<") (lambda () (interactive) (insert "«")))
+(global-set-key (kbd "C->") (lambda () (interactive) (insert "»")))

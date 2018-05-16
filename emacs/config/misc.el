@@ -52,3 +52,12 @@ dired mode, use the current directory"
           (set-buffer-modified-p nil)
           (message "File '%s' successfully renamed to '%s'"
                    name (file-name-nondirectory new-name)))))))
+
+(defun next-page ()
+  (interactive)
+  (narrow-to-page 1))
+
+(defun prev-page ()
+  (interactive)
+  (narrow-to-page -1))
+

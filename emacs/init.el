@@ -10,6 +10,7 @@
 (setq-default cursor-type 'box)
 
 (put 'upcase-region 'disabled nil)
+(put 'narrow-to-page 'disabled nil)
 
 (add-to-list 'load-path "~/.emacs.d/site-lisp/")
 

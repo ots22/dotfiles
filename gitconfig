@@ -10,6 +10,7 @@
 	pager = cat
 [alias]
 	l = log --decorate --graph --oneline --boundary --all
+	ll = log --decorate --graph --oneline --boundary --all -n 20
 	s = status --short
 	b = branch --all
 	update = "!git pull --rebase --prune $@ && git submodule update --init --recursive; :"

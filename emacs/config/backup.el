@@ -1,8 +1,0 @@
-(setq backup-by-copying t)
-(setq version-control t)
-(setq vc-make-backup-files t)
-(setq delete-old-versions t)
-(setq kept-new-versions 10)
-(setq kept-old-versions 2)
-(setq make-backup-file-name-function 'make-backup-file-name)
-(setq backup-directory-alist '(("" . "~/.backups/emacs")))

@@ -17,12 +17,13 @@ alias grep='grep --color=auto'
 alias quiet='&>/dev/null'
 alias q='quiet'
 
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
 export CLICOLOR=1
 export LSCOLORS=Exfxcxdxbxegedabagacad
-export GREP_OPTIONS='--color=auto'
 export PYTHONSTARTUP=~/.pystartup
 
-#export PATH=$PATH:$HOME/bin
+export PATH=/opt/local/bin:$PATH:$HOME/bin:/Applications/j64-806/bin/
 #export EDITOR=ecvisit
 
 PS1='\[\e[1;36m\]\h:\w\$\[\e[0m\] '
@@ -40,3 +41,11 @@ export PROMPT_COMMAND="history -a"
 if [ "$TERM" = "eterm-color" -a -n "$SSH_CONNECTION" ]; then
     export PROMPT_COMMAND="emacs_term_dirtrack; $PROMPT_COMMAND"
 fi
+
+export PATH=$PATH:/Users/ostrickson/bin:/Applications/Racket\ v7.8/bin
+export PATH=/usr/local/opt/python/libexec/bin:/opt/local/lib/postgresql12/bin/:$PATH
+
+source '/Users/ostrickson/lib/azure-cli/az.completion'
+
+export POWERSHELL_TELEMETRY_OPTOUT=1
+[ -f "${GHCUP_INSTALL_BASE_PREFIX:=$HOME}/.ghcup/env" ] && source "${GHCUP_INSTALL_BASE_PREFIX:=$HOME}/.ghcup/env"
